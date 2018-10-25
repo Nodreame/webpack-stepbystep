@@ -25,7 +25,7 @@ document.body.appendChild(ele);
 if (module.hot) {
     module.hot.accept('./print.js', function () {
         console.log('Accepting the updated printMe module!');
-        // printMe();
+        printMe();
         document.body.removeChild(ele);
         ele = component();
         document.body.appendChild(ele);
